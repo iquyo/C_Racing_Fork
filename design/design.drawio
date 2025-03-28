@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.3">
   <diagram name="Page-1" id="E8dEKOCGTAyp-AwCP83N">
-    <mxGraphModel dx="1253" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1431" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,8 +10,11 @@
         <mxCell id="GNlZINtrsMvjbV6Qpo29-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-1" target="GNlZINtrsMvjbV6Qpo29-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-1" target="GNlZINtrsMvjbV6Qpo29-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="GNlZINtrsMvjbV6Qpo29-1" value="Game" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="740" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="1040" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GNlZINtrsMvjbV6Qpo29-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-2" target="GNlZINtrsMvjbV6Qpo29-8">
           <mxGeometry relative="1" as="geometry" />
@@ -112,6 +115,9 @@
         <mxCell id="GNlZINtrsMvjbV6Qpo29-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-30" target="GNlZINtrsMvjbV6Qpo29-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-30" target="GNlZINtrsMvjbV6Qpo29-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="GNlZINtrsMvjbV6Qpo29-30" value="Game types" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1280" y="280" width="120" height="60" as="geometry" />
         </mxCell>
@@ -138,6 +144,30 @@
         </mxCell>
         <mxCell id="GNlZINtrsMvjbV6Qpo29-47" value="Credits?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-52" target="GNlZINtrsMvjbV6Qpo29-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-52" target="GNlZINtrsMvjbV6Qpo29-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GNlZINtrsMvjbV6Qpo29-52" target="GNlZINtrsMvjbV6Qpo29-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-52" value="Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-56" value="Settings" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-57" value="Race times" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-58" value="Multiplayer?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNlZINtrsMvjbV6Qpo29-62" value="# of 1st places /&amp;nbsp;&lt;div&gt;average position&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="400" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
