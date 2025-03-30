@@ -38,10 +38,16 @@ shadow_enabled = true
 
 [node name="Map" type="Node3D" parent="."]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Map"]
+[node name="Ground" type="CSGBox3D" parent="Map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.361961, 0, -0.491211)
 material_override = SubResource("StandardMaterial3D_fj7yv")
+use_collision = true
 size = Vector3(100, 1, 100)
+
+[node name="Wall" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.3764, 12.5518, -4.26799)
+use_collision = true
+size = Vector3(0.342285, 24.1035, 76.8975)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("1_f3sb7")
@@ -59,4 +65,3 @@ mesh = SubResource("BoxMesh_aqk2v")
 [node name="Camera3D" type="Camera3D" parent="Player"]
 transform = Transform3D(0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 50, 35, 50)
 current = true
-
