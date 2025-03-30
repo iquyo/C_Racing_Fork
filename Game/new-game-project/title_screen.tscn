@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://v74yti66yybr"]
+[gd_scene load_steps=3 format=3 uid="uid://v74yti66yybr"]
 
 [ext_resource type="Script" uid="uid://bkwaawxqbqso0" path="res://title_screen.gd" id="1_v6p8y"]
+
+[sub_resource type="Theme" id="Theme_v6p8y"]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 
 [node name="Title-Screen" type="Control"]
 layout_mode = 3
@@ -11,20 +14,42 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_v6p8y")
 
-[node name="Start-Button" type="Button" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 0
-offset_left = 382.0
-offset_top = 334.0
-offset_right = 540.0
-offset_bottom = 397.0
-text = "Start"
+offset_right = 1152.0
+offset_bottom = 648.0
 
-[node name="Controls-Button" type="Button" parent="."]
-offset_left = 596.0
-offset_top = 337.0
-offset_right = 754.0
-offset_bottom = 400.0
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Controls-Button" type="Button" parent="PanelContainer/MarginContainer/Control"]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 320.0
+offset_right = 512.0
+offset_bottom = 384.0
 text = "Controls"
 
-[connection signal="pressed" from="Start-Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Controls-Button" to="." method="_on_controls_button_pressed"]
+[node name="Start-Button" type="Button" parent="PanelContainer/MarginContainer/Control"]
+layout_mode = 2
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 512.0
+offset_bottom = 256.0
+theme = SubResource("Theme_v6p8y")
+text = "Start"
+
+[node name="Credits-Button" type="Button" parent="PanelContainer/MarginContainer/Control"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 448.0
+offset_right = 512.0
+offset_bottom = 512.0
+text = "Credits"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Control/Controls-Button" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Control/Start-Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Control/Credits-Button" to="." method="_on_credits_button_pressed"]
