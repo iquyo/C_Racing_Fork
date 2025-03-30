@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-var speed = 10.0
+var speed = 30
 
 func _physics_process(delta):
 	var input_dir = Vector3.ZERO
