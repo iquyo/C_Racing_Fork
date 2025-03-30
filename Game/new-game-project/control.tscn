@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://befmqumpcxyb6"]
+[gd_scene load_steps=13 format=3 uid="uid://befmqumpcxyb6"]
 
 [ext_resource type="Texture2D" uid="uid://duk0qnk1bdv3d" path="res://assets/control-icons/Vector/keyboard_w.svg" id="1_0ytqx"]
 [ext_resource type="Texture2D" uid="uid://ru8q3bkn8hpv" path="res://assets/control-icons/Vector/keyboard_q.svg" id="1_62e2m"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://ctlf5hg8opx2v" path="res://assets/control-icons/Vector/keyboard_arrow_left.svg" id="7_knq72"]
 [ext_resource type="Texture2D" uid="uid://lylsg8bgm4xf" path="res://assets/control-icons/Vector/keyboard_arrow_down.svg" id="8_xvdhi"]
 [ext_resource type="Texture2D" uid="uid://mtnnooaioqsb" path="res://assets/control-icons/Vector/keyboard_arrow_right.svg" id="9_oq4si"]
+
+[sub_resource type="Theme" id="Theme_pxugv"]
 
 [node name="Control-Menu" type="Control"]
 layout_mode = 3
@@ -25,6 +27,7 @@ script = ExtResource("1_pxugv")
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
+theme = SubResource("Theme_pxugv")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
