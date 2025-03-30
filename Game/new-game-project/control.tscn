@@ -1,0 +1,138 @@
+[gd_scene load_steps=11 format=3 uid="uid://befmqumpcxyb6"]
+
+[ext_resource type="Texture2D" uid="uid://duk0qnk1bdv3d" path="res://assets/control-icons/Vector/keyboard_w.svg" id="1_0ytqx"]
+[ext_resource type="Texture2D" uid="uid://ru8q3bkn8hpv" path="res://assets/control-icons/Vector/keyboard_q.svg" id="1_62e2m"]
+[ext_resource type="Texture2D" uid="uid://bagj85cif5xro" path="res://assets/control-icons/Vector/keyboard_a.svg" id="2_pxugv"]
+[ext_resource type="Texture2D" uid="uid://bvvslm4raek7x" path="res://assets/control-icons/Vector/keyboard_shift.svg" id="2_qtu10"]
+[ext_resource type="Texture2D" uid="uid://jhgwrae0yesf" path="res://assets/control-icons/Vector/keyboard_s.svg" id="3_eh0v1"]
+[ext_resource type="Texture2D" uid="uid://cq081chfq3j1x" path="res://assets/control-icons/Vector/keyboard_d.svg" id="4_am1vj"]
+[ext_resource type="Texture2D" uid="uid://dk0ugwyflkeko" path="res://assets/control-icons/Vector/keyboard_arrow_up.svg" id="6_g31lc"]
+[ext_resource type="Texture2D" uid="uid://ctlf5hg8opx2v" path="res://assets/control-icons/Vector/keyboard_arrow_left.svg" id="7_knq72"]
+[ext_resource type="Texture2D" uid="uid://lylsg8bgm4xf" path="res://assets/control-icons/Vector/keyboard_arrow_down.svg" id="8_xvdhi"]
+[ext_resource type="Texture2D" uid="uid://mtnnooaioqsb" path="res://assets/control-icons/Vector/keyboard_arrow_right.svg" id="9_oq4si"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Controls"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Player-1-Controls" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Player 1"
+horizontal_alignment = 1
+
+[node name="Player-1-Move" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls"]
+layout_mode = 2
+
+[node name="W-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Move"]
+layout_mode = 2
+texture = ExtResource("1_0ytqx")
+
+[node name="A-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Move"]
+layout_mode = 2
+texture = ExtResource("2_pxugv")
+
+[node name="S-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Move"]
+layout_mode = 2
+texture = ExtResource("3_eh0v1")
+
+[node name="D-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Move"]
+layout_mode = 2
+texture = ExtResource("4_am1vj")
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Move"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Move"
+
+[node name="Player-1-Boost" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Boost"]
+layout_mode = 2
+texture = ExtResource("1_62e2m")
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-1-Controls/Player-1-Boost"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Boost"
+
+[node name="Space" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Player-2-Controls" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Player 2"
+horizontal_alignment = 1
+
+[node name="Player-2-Move" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls"]
+layout_mode = 2
+
+[node name="Up-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/Player-2-Move"]
+layout_mode = 2
+texture = ExtResource("6_g31lc")
+
+[node name="Left-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/Player-2-Move"]
+layout_mode = 2
+texture = ExtResource("7_knq72")
+
+[node name="Down-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/Player-2-Move"]
+layout_mode = 2
+texture = ExtResource("8_xvdhi")
+
+[node name="Right-Texture" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/Player-2-Move"]
+layout_mode = 2
+texture = ExtResource("9_oq4si")
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/Player-2-Move"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Move"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("2_qtu10")
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Player-2-Controls/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Boost"
