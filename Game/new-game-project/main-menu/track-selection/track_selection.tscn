@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwlapttdrc001"]
 
-[ext_resource type="Script" uid="uid://xck0fxpha33" path="res://track_selection.gd" id="1_xs2w5"]
+[ext_resource type="Script" uid="uid://xck0fxpha33" path="res://main-menu/track-selection/track_selection.gd" id="1_am0hc"]
 
 [node name="Track-Selection" type="Control"]
 layout_mode = 3
@@ -9,13 +9,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_xs2w5")
+script = ExtResource("1_am0hc")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Decrease-Lap-Button" type="Button" parent="Panel"]
 layout_mode = 0
@@ -38,6 +40,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Increase-Laps-Button" type="Button" parent="Panel"]
+layout_mode = 0
 offset_left = 230.0
 offset_top = 440.0
 offset_right = 310.0

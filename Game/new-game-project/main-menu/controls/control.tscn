@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://duk0qnk1bdv3d" path="res://assets/control-icons/Vector/keyboard_w.svg" id="1_0ytqx"]
 [ext_resource type="Texture2D" uid="uid://ru8q3bkn8hpv" path="res://assets/control-icons/Vector/keyboard_q.svg" id="1_62e2m"]
-[ext_resource type="Script" uid="uid://v33vyd5my6wo" path="res://control.gd" id="1_pxugv"]
+[ext_resource type="Script" uid="uid://v33vyd5my6wo" path="res://main-menu/controls/control.gd" id="1_pxugv"]
 [ext_resource type="Texture2D" uid="uid://bagj85cif5xro" path="res://assets/control-icons/Vector/keyboard_a.svg" id="2_pxugv"]
 [ext_resource type="Texture2D" uid="uid://bvvslm4raek7x" path="res://assets/control-icons/Vector/keyboard_shift.svg" id="2_qtu10"]
 [ext_resource type="Texture2D" uid="uid://jhgwrae0yesf" path="res://assets/control-icons/Vector/keyboard_s.svg" id="3_eh0v1"]

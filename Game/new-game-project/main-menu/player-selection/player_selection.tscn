@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0327jfyyrox4"]
+
+[ext_resource type="Script" uid="uid://co5usmpc7fx0f" path="res://main-menu/player-selection/player_selection.gd" id="1_otn16"]
+
+[node name="Player-Selection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_otn16")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.535
+anchor_top = 0.494
+anchor_right = 0.778
+anchor_bottom = 0.602
+offset_left = -0.320007
+offset_top = -0.112
+offset_right = -0.256042
+offset_bottom = -0.0960388
+text = "2 Player"
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.222
+anchor_top = 0.494
+anchor_right = 0.465
+anchor_bottom = 0.602
+offset_left = 0.255981
+offset_top = -0.112
+offset_right = 0.319946
+offset_bottom = -0.0960388
+text = "1 Player"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.347
+anchor_top = 0.111
+anchor_right = 0.651
+anchor_bottom = 0.188
+offset_left = 0.255981
+offset_top = 0.071991
+offset_right = 0.0479736
+offset_bottom = 0.175995
+theme_override_font_sizes/font_size = 30
+text = "Choose Players"
+horizontal_alignment = 1

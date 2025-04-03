@@ -14,3 +14,7 @@ config/name="New Game Project"
 run/main_scene="uid://dm37hr858b42v"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
