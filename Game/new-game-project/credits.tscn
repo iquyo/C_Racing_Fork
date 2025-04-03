@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfsge7ue473su"]
 
-[ext_resource type="Script" uid="uid://5myivt5asftu" path="res://credits.gd" id="1_nm7lk"]
+[ext_resource type="Script" uid="uid://c4sdkcokmblk0" path="res://credits.gd" id="1_nm7lk"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -16,6 +16,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 2
