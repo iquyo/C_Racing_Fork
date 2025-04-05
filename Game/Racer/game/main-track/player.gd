@@ -5,40 +5,30 @@ const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.05
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = 9.8
+var gravity = 20
 
 # shortcuts to the child nodes
 @onready var camera = $Camera3D
 
+
+
 func _physics_process(delta):
-	# Add the gravity.
+	var input_vector = Vector3.ZERO
 	if not is_on_floor():
-		velocity.y -= gravity * delta
-
-	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-
+		input_vector.y -= gravity * delta
 	if Input.is_action_pressed("ui_right"):
-		rotate_y(-1 * SENSITIVITY)  # Rotate player right
+		rotate_y(-1 * SENSITIVITY)
 	if Input.is_action_pressed("ui_left"):
-		rotate_y(1 * SENSITIVITY)  # Rotate player left
-	
-	var move = 0
-
-	if Input.is_action_pressed("ui_up"):
-		move = -1
+		rotate_y(1 * SENSITIVITY)
 	if Input.is_action_pressed("ui_down"):
-		move = 1
-	
-	var direction = (transform.basis * Vector3(0, 0, move)).normalized()
+		input_vector.z += 1
+	if Input.is_action_pressed("ui_up"):
+		input_vector.z -= 1
+		
+	# Jumping physics	
+	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		#velocity.y = JUMP_VELOCITY
 
-	if direction:
-		velocity.z = direction.z * SPEED
-	else:
-		velocity.z = 0.0
-
-	move_and_slide() # Changes the character depending on the velocity vector
+	input_vector = (transform.basis * input_vector).normalized()
+	velocity = input_vector * SPEED
+	move_and_slide()
