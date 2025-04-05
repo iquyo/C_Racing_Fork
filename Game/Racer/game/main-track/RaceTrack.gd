@@ -9,7 +9,7 @@ func ellipse_coordinates(player_position):
 	if (gradient > 0 and player_position[0] > 0) or (gradient < 0 and player_position[0] > 0):
 		return [sol, sol * gradient]
 	else:
-		return [-sol, sol * gradient]
+		return [-sol, -sol * gradient]
 
 
 func _on_net_area_3d_area_shape_entered(_area_rid: RID, area: Area3D, _area_shape_index: int, _local_shape_index: int) -> void:

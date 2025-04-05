@@ -1,8 +1,47 @@
 [gd_scene load_steps=19 format=3 uid="uid://dm37hr858b42v"]
 
-[ext_resource type="Script" uid="uid://wm4c4ufg2k6f" path="res://game/main-track/main_track.gd" id="1_0sedv"]
 [ext_resource type="Script" uid="uid://b7hcyfe86cpah" path="res://game/main-track/player.gd" id="1_6baeo"]
 [ext_resource type="ArrayMesh" uid="uid://dtm8dy4ic7uhs" path="res://game/main-track/Racetrack.obj" id="2_6baeo"]
+
+[sub_resource type="GDScript" id="GDScript_6baeo"]
+script/source = "extends Node3D
+
+func ellipse_coordinates(player_position):
+	# find the intersection between the ellipse and line
+	
+	if player_position[2] < 0 and player_position[0] == 0:
+		return [0, -129]	
+	elif player_position[2] > 0 and player_position[0] == 0:
+		return [0, 129]
+	elif player_position[2] == 0 and player_position[0] > 0:
+		return [210, 0]
+	elif player_position[2] == 0 and player_position[0] < 0:
+		return [210, 0]
+		
+
+	var gradient = player_position[2] / (player_position[0] + 0.01)
+	
+	# ellipse is a = 210, b = 129
+	var sol = sqrt((129 ** 2 * 210 **2) / ((129 ** 2 + (210 ** 2) * (gradient ** 2)) ) )
+	if (gradient > 0 and player_position[0] > 0) or (gradient < 0 and player_position[0] > 0):
+		return [sol, sol * gradient]
+	else:
+		return [-sol, -sol * gradient]
+
+
+func _on_net_area_3d_area_shape_entered(_area_rid: RID, area: Area3D, _area_shape_index: int, _local_shape_index: int) -> void:
+	var player = area.get_parent()
+	if player.name == \"Player\":
+		var input_vector = Vector3.ZERO
+		var player_position = player.global_transform.origin
+		var vector_arr = ellipse_coordinates(player_position)
+		print(vector_arr)
+		input_vector.x = vector_arr[0]
+		input_vector.y = 8.0
+		input_vector.z = vector_arr[1]
+		player.global_transform.origin = input_vector
+		
+"
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -54,7 +93,7 @@ data = PackedVector3Array(0.0449, 0.0015, 0, 0.0449, 0.0015, 0.001, 0.045, 0, 0,
 albedo_color = Color(0.380392, 0.372549, 0.345098, 1)
 
 [node name="Racetrack" type="Node3D"]
-script = ExtResource("1_0sedv")
+script = SubResource("GDScript_6baeo")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_tlwt5")
