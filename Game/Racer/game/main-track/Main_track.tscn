@@ -47,12 +47,12 @@ func _on_net_area_3d_area_shape_entered(_area_rid: RID, area: Area3D, _area_shap
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 
-[sub_resource type="Sky" id="Sky_fj7yv"]
+[sub_resource type="Sky" id="Sky_6baeo"]
 sky_material = SubResource("ProceduralSkyMaterial_f3sb7")
 
 [sub_resource type="Environment" id="Environment_tlwt5"]
 background_mode = 2
-sky = SubResource("Sky_fj7yv")
+sky = SubResource("Sky_6baeo")
 tonemap_mode = 2
 glow_enabled = true
 

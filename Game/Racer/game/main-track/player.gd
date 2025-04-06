@@ -11,7 +11,6 @@ var gravity = 20
 @onready var camera = $Camera3D
 
 
-
 func _physics_process(delta):
 	var input_vector = Vector3.ZERO
 	if not is_on_floor():
@@ -26,8 +25,8 @@ func _physics_process(delta):
 		input_vector.z -= 1
 		
 	# Jumping physics	
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
 
 	input_vector = (transform.basis * input_vector).normalized()
 	velocity = input_vector * SPEED
