@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dm37hr858b42v"]
 
-[ext_resource type="Script" uid="uid://b7hcyfe86cpah" path="res://game/main-track/player.gd" id="1_6baeo"]
+[ext_resource type="Script" uid="uid://c0ekdbfs266af" path="res://game/main-track/player.gd" id="1_6baeo"]
 [ext_resource type="PackedScene" uid="uid://bobv2bdyym4yp" path="res://game/main-track/Racetrack.gltf" id="2_ouk12"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]

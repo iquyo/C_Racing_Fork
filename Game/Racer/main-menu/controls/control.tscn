@@ -1,16 +1,16 @@
 [gd_scene load_steps=12 format=3 uid="uid://befmqumpcxyb6"]
 
-[ext_resource type="Texture2D" uid="uid://duk0qnk1bdv3d" path="res://assets/control-icons/Vector/keyboard_w.svg" id="1_0ytqx"]
-[ext_resource type="Texture2D" uid="uid://ru8q3bkn8hpv" path="res://assets/control-icons/Vector/keyboard_q.svg" id="1_62e2m"]
-[ext_resource type="Script" uid="uid://v33vyd5my6wo" path="res://main-menu/controls/control.gd" id="1_pxugv"]
-[ext_resource type="Texture2D" uid="uid://bagj85cif5xro" path="res://assets/control-icons/Vector/keyboard_a.svg" id="2_pxugv"]
-[ext_resource type="Texture2D" uid="uid://bvvslm4raek7x" path="res://assets/control-icons/Vector/keyboard_shift.svg" id="2_qtu10"]
-[ext_resource type="Texture2D" uid="uid://jhgwrae0yesf" path="res://assets/control-icons/Vector/keyboard_s.svg" id="3_eh0v1"]
-[ext_resource type="Texture2D" uid="uid://cq081chfq3j1x" path="res://assets/control-icons/Vector/keyboard_d.svg" id="4_am1vj"]
-[ext_resource type="Texture2D" uid="uid://dk0ugwyflkeko" path="res://assets/control-icons/Vector/keyboard_arrow_up.svg" id="6_g31lc"]
-[ext_resource type="Texture2D" uid="uid://ctlf5hg8opx2v" path="res://assets/control-icons/Vector/keyboard_arrow_left.svg" id="7_knq72"]
-[ext_resource type="Texture2D" uid="uid://lylsg8bgm4xf" path="res://assets/control-icons/Vector/keyboard_arrow_down.svg" id="8_xvdhi"]
-[ext_resource type="Texture2D" uid="uid://mtnnooaioqsb" path="res://assets/control-icons/Vector/keyboard_arrow_right.svg" id="9_oq4si"]
+[ext_resource type="Texture2D" uid="uid://di5f48lit7lee" path="res://assets/images/control-icons/keyboard_w.svg" id="1_0ytqx"]
+[ext_resource type="Texture2D" uid="uid://dkaiu1a3xc63r" path="res://assets/images/control-icons/keyboard_q.svg" id="1_62e2m"]
+[ext_resource type="Script" uid="uid://cg51qfmfkt8wf" path="res://main-menu/controls/control.gd" id="1_pxugv"]
+[ext_resource type="Texture2D" uid="uid://cjf7j70tx7rys" path="res://assets/images/control-icons/keyboard_a.svg" id="2_pxugv"]
+[ext_resource type="Texture2D" uid="uid://d2v7a70q341c2" path="res://assets/images/control-icons/keyboard_shift.svg" id="2_qtu10"]
+[ext_resource type="Texture2D" uid="uid://bxva0h1vii562" path="res://assets/images/control-icons/keyboard_s.svg" id="3_eh0v1"]
+[ext_resource type="Texture2D" uid="uid://cpaxof2ho5iyf" path="res://assets/images/control-icons/keyboard_d.svg" id="4_am1vj"]
+[ext_resource type="Texture2D" uid="uid://ogf28wr7sj67" path="res://assets/images/control-icons/keyboard_arrow_up.svg" id="6_g31lc"]
+[ext_resource type="Texture2D" uid="uid://x0gng3n5612y" path="res://assets/images/control-icons/keyboard_arrow_left.svg" id="7_knq72"]
+[ext_resource type="Texture2D" uid="uid://cifesoavlka1t" path="res://assets/images/control-icons/keyboard_arrow_down.svg" id="8_xvdhi"]
+[ext_resource type="Texture2D" uid="uid://fbcvr2ybd53q" path="res://assets/images/control-icons/keyboard_arrow_right.svg" id="9_oq4si"]
 
 [node name="Control-Menu" type="Control"]
 layout_mode = 3
@@ -26,6 +26,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Button" type="Button" parent="Panel"]
 clip_contents = true
