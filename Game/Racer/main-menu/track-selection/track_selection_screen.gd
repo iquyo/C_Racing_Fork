@@ -23,7 +23,6 @@ func _set_track_selected(track_node):
 		var is_selected = track_node == node
 		node.set_selected(is_selected)
 
-
 func _on_start_button_pressed() -> void:
 	if not GlobalData.game_track_path:
 		print("No track selected")
