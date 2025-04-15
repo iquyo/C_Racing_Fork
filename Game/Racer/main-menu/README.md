@@ -1,5 +1,8 @@
 # Main Menu
 
+![Flowchart for game creation](https://github.com/user-attachments/assets/76d47fb1-ffa3-404b-9e08-82fb2b796bf9)
+
+
 ## `controls/`
 * Displays the controls for players 1 and 2
 * Links to the title screen
